@@ -5,7 +5,7 @@ from datetime import date
 tdate=date.today()
 mydb=mysql.connector.connect(host="localhost",\
                              user="root",\
-                             passwd="Danger@66",\
+                             #passwd="Enter your mySQL Password Here",\
                              database="bus_booking")
 
 mycursor=mydb.cursor()
