@@ -1,0 +1,13 @@
+from tkinter import *
+root=Tk()
+root.title("Bus Booking")
+h,w=root.winfo_screenheight(),root.winfo_screenwidth()
+root.geometry("%dx%d+0+0"%(w,h))
+bus=PhotoImage(file='.\\python_bus.png')
+Label(root,image=bus).grid(row=0,column=0,columnspan=15,padx=w//2.5)
+Label(root,text='Online Bus Booking System',bg='light blue',fg='red',font='Arial 20 bold').grid(row=1,column=0,columnspan=15,padx=w//2.5,pady=h//20)
+Button(root,text='Seat Booking',bg='green2',fg='grey1',font='Arial 16 bold').grid(row=4,column=4)
+Button(root,text='Check Booked Seat',bg='green3',fg='grey1',font='Arial 16 bold').grid(row=4,column=6)
+Button(root,text='Add Bus Details',bg='dark green',fg='grey1',font='Arial 16 bold').grid(row=4,column=8)
+Label(root,text='For Admin Only',fg='red',font='Arial 12 bold').grid(row=5,column=8)
+root.mainloop()

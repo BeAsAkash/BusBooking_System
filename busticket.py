@@ -1,0 +1,13 @@
+from tkinter import *
+root=Tk()
+root.title("Bus Booking")
+h,w=root.winfo_screenheight(),root.winfo_screenwidth()
+root.geometry("%dx%d+0+0"%(w,h))
+bus=PhotoImage(file='.\\python_bus.png')
+Label(root,image=bus).grid(row=0,column=0,columnspan=15,padx=w//2.5)
+Label(root,text='Online Bus Booking System',bg='light blue',fg='red',font='Arial 20 bold').grid(row=1,column=0,columnspan=15,padx=w//2.5,pady=h//20)
+Label(root,text='Bus Ticket',fg='grey1',font='Arial 16 bold').grid(row=2,column=0,columnspan=15,padx=w//2.5)
+box=Frame(root)
+box.grid(row=4,column=7,pady=h//30)
+Label(box,text='fuck you bitch').pack()
+root.mainloop()

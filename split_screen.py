@@ -1,0 +1,17 @@
+from tkinter import *
+root=Tk()
+root.title("Bus Booking")
+h,w=root.winfo_screenheight(),root.winfo_screenwidth()
+root.geometry("%dx%d+0+0"%(w,h))
+bus=PhotoImage(file='.\\python_bus.png')
+Label(root,image=bus).grid(row=0,column=0,columnspan=10,padx=w//2.5)
+Label(root,text='Online Bus Booking System',bg='light blue',fg='red',font='Arial 20 bold').grid(row=1,column=0,padx=w//2.5,pady=h//20)
+Label(root,text='Name: Akash Kumar',fg='blue',font='Arial 16 bold').grid(row=3,column=0,pady=h//80)
+Label(root,text='Er : 211B378',fg='blue',font='Arial 16 bold').grid(row=4,column=0,pady=h//80)
+Label(root,text='Mobile : 8318603271',fg='blue',font='Arial 16 bold').grid(row=5,column=0,pady=h//80)
+Label(root,text='Submitted To : Dr. Mahesh Kumar',bg='light blue',fg='red',font='Arial 20 bold').grid(row=8,column=0,pady=h//8)
+Label(root,text='ProjectBasedLearning',fg='red',font='Arial 16 bold').grid(row=9,column=0,pady=h//40)
+def close(e=1):
+    root.destroy()
+root.bind("<KeyPress>",close)
+root.mainloop()
