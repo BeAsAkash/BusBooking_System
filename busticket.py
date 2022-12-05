@@ -9,5 +9,5 @@ Label(root,text='Online Bus Booking System',bg='light blue',fg='red',font='Arial
 Label(root,text='Bus Ticket',fg='grey1',font='Arial 16 bold').grid(row=2,column=0,columnspan=15,padx=w//2.5)
 box=Frame(root)
 box.grid(row=4,column=7,pady=h//30)
-Label(box,text='fuck you bitch').pack()
+Label(box,text='Booked').pack()
 root.mainloop()
