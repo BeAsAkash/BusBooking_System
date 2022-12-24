@@ -247,6 +247,9 @@ class test:
 
 
     def seatcheck(self):
+        def gohome():
+            root.destroy()
+            self.home()
         root=Tk()
         root.title('SEAT CHECK')
         h,w=root.winfo_screenheight(),root.winfo_screenwidth()
@@ -298,6 +301,7 @@ class test:
             else:
                 showerror("ERROR","Invalid Input")
         Button(root,text='Check Booking',command=gentkt).grid(row=4,column=7)
+        Button(root,text='Home',command=gohome).grid(row=4,column=9)
         root.mainloop()
 
 
