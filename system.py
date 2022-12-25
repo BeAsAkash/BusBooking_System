@@ -301,7 +301,8 @@ class test:
             else:
                 showerror("ERROR","Invalid Input")
         Button(root,text='Check Booking',command=gentkt).grid(row=4,column=7)
-        Button(root,text='Home',command=gohome).grid(row=4,column=9)
+        home=PhotoImage(file='.\\home.png')
+        Button(root,image=home,command=gohome).grid(row=4,column=9)
         root.mainloop()
 
 
